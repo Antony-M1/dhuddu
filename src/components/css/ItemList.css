@@ -1,0 +1,23 @@
+.item{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: silver;
+    margin-bottom: 5px;
+}
+
+input {
+    border: 0cqw;
+    margin: 5px;
+}
+
+
+#list-button{
+    align-items: last baseline;
+    float:left;
+}
+
+.div-item{
+    display: flex;
+}
