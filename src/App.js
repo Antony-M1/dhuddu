@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AddItem from "./components/AddItem";
 import SearchItem from "./components/SearchItem";
 
@@ -10,11 +10,15 @@ function App() {
     if(localStorage.getItem('todo_list')){
       list_items = JSON.parse(localStorage.getItem('todo_list'));
     }
-   const [items, setItems] = useState(list_items);
+   const [items, setItems] = useState([]);
 
    const [newItem, setNewItem] = useState('')
     
    const [search, setSearch] = useState()
+
+   useEffect(() => {
+      JSON.parse(localStorage.getItem("todo_list"));
+   }, []);
 
    const addItem = (item) => {
       const id = items.length ? items[items.length - 1].id + 1 : 1 
@@ -47,13 +51,10 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('submitted')
     
     if(!newItem){
-      console.log('Empty')
       return;
     }
-    console.log(newItem);
     addItem(newItem);
     // addItem
     setNewItem('')
