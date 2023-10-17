@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from '../App';
 import Colorify from './Colorify';
 import Facebook from './Facebook';
-import { Face } from '@mui/icons-material';
+import ShareWave from './ShareWave';
 
 function Router() {
   return (
@@ -13,6 +13,7 @@ function Router() {
           <Route path="/facebook" element={<Facebook />} />
           <Route path="/" element={<App />} />
           <Route path="/colorify" element={<Colorify />} />
+          <Route path="/sharewave/*" element={<ShareWave />} />
         </Routes>
       </BrowserRouter>
     </div>

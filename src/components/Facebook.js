@@ -13,6 +13,14 @@ function Facebook() {
   const [textType, setTextType] = useState('users')
   const [items,setItems] = useState([])
 
+  const initializeValue = async () => {
+    let APIurl = "https://jsonplaceholder.typicode.com/users"; 
+
+    let response = await fetch(APIurl);
+    const listItems = await response.json();
+    setItems(listItems);
+
+  }
 
   const handleOnClick = async (value) => {
     setTextType(value)
