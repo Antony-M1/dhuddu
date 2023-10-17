@@ -1,19 +1,14 @@
 {
-    "items":[
-        {
-            "id":1,
-            "checked":false,
-            "item": "Learn React Js"
-        },
-        {
-            "id":2,
-            "checked":true,
-            "item": "Learn Python"
-        },
-        {
-            "id":3,
-            "checked":false,
-            "item": "Learn Javascript"
-        }
-    ]
+  "items": [
+    {
+      "id": 2,
+      "checked": true,
+      "item": "Learn Python"
+    },
+    {
+      "id": 3,
+      "checked": true,
+      "item": "Learn Javascript"
+    }
+  ]
 }

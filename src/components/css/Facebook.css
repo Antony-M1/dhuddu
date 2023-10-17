@@ -1,0 +1,35 @@
+
+.main-nav{
+    display: flex;
+    column-gap: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button{
+    height: 50px;
+    width: 100%;
+    font-style: bold;
+    color: blue;
+    display: flex;
+    background-color: bisque;
+
+}
+
+button{
+    width: inherit;
+}
+
+
+.content{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(209, 191, 168)
+}
+
+.item-list{
+    padding-left: 20px;
+}
