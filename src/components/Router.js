@@ -13,7 +13,7 @@ function Router() {
           <Route path="/facebook" element={<Facebook />} />
           <Route path="/" element={<App />} />
           <Route path="/colorify" element={<Colorify />} />
-          <Route path="/sharewave/*" element={<ShareWave />} />
+          <Route path="/sharewave" element={<ShareWave />} />
         </Routes>
       </BrowserRouter>
     </div>
